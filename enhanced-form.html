@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Form Assignment</title>
+   
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Enhanced Content & Form Demo</h1>
+    <p>A showcase of advanced HTML elements and form validation</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Topics Covered</h2>
+      <ul>
+        <li>HTML5 Semantic Elements</li>
+        <li>Using Lists and Tables</li>
+        <li>Media Embedding</li>
+        <li>Advanced HTML5 Forms</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Class Schedule</h2>
+      <table border="1" style="border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML Basics</td>
+            <td>9:00 - 11:00</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>Forms and Validation</td>
+            <td>10:00 - 12:00</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Intro to CSS</td>
+            <td>10:00 - 12:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Intro Video</h2>
+      <video width="320" height="240" controls muted loop>
+        <source src="chkchkboom.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <video width="320" height="240" controls muted loop>
+        <source src="soul-land.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section>
+     <audio controls>
+        <source src="Katy_Nichole_-_In_Jesus_Name_God_Of_Possible__CeeNaija.com_.mp3" type="audio/mpeg">
+        browser does not support the audio element.
+     </audio>
+    </section>
+
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+          
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Enter your full name"><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required autocomplete="email"><br><br>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required><br><br>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+          
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required pattern="[a-zA-Z0-9]{5,}" placeholder="At least 5 alphanumeric characters"><br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6" autocomplete="new-password"><br><br>
+
+          <label for="confirmpw">Confirm Password:</label>
+          <input type="password" id="confirmpw" name="confirmpw" required minlength="6"><br><br>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="course">Choose a course:</label>
+          <select id="course" name="course" required>
+            <option value="">Select</option>
+            <option value="html">HTML Basics</option>
+            <option value="css">CSS Fundamentals</option>
+            <option value="js">JavaScript Starter</option>
+          </select><br><br>
+
+          <label>
+            <input type="checkbox" name="agree" required>
+            I agree to the terms and conditions
+          </label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WebDev Practice. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
